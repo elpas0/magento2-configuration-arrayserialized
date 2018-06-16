@@ -1,0 +1,13 @@
+<?php
+/**
+ * sample template to illustrate serialized output
+ *
+ * shortcode for cms pages / blocks
+ * {{block class="Nwdthemes\ArraySerialized\Block\Sample" template="Nwdthemes_ArraySerialized::sample.phtml" }}
+ *
+ * @var $block \Nwdthemes\ArraySerialized\Block\Sample
+ */
+?>
+<script>
+var sampleJson = <?php echo $block->getArraySerialized(); ?>;
+</script>

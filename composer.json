@@ -1,0 +1,29 @@
+{
+  "name": "elpas0/magento2-configuration-arrayserialized",
+  "description": "Magento 2 ArraySerialized sample",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "Open Source License",
+  "keywords": [
+      "magento 2",
+      "nwdthemes",
+      "configuration",
+      "ArraySerialized"
+  ],
+  "authors": [
+    {
+      "name": "elpas0",
+      "email": "serge@nwdthemes.com",
+      "homepage": "https://nwdthemes.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Nwdthemes\\ArraySerialized\\": ""
+    }
+  }
+}

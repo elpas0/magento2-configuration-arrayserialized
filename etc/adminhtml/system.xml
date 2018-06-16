@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="nwdthemes" translate="label" sortOrder="777">
+            <label>NWDthemes</label>
+        </tab>
+        <section id="nwdarrayserialized" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>ArraySerialized</label>
+            <tab>nwdthemes</tab>
+            <resource>Nwdthemes_ArraySerialized::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Display Settings</label>
+                <field id="responsiveItems" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Responsive Items</label>
+                    <frontend_model>Nwdthemes\ArraySerialized\Block\Adminhtml\Form\Field\ResponsiveItems</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Object containing responsive options. Breakpoint set screen width and item set number of items visible starting from breakpoint width</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
